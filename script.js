@@ -89,9 +89,7 @@ function gameOver(){
 
 function playAgain(){
     location.reload();
-    guesses=10;
-    h2.innerText = "You have " + guesses + " attempts left";
-    h1.innerText = "";
+    h2.innerText = "Play the game!";
     audio.play();
 
     
@@ -104,7 +102,7 @@ function success(){
 play.addEventListener("click", function(){
     playAgain();
 });
-checkNumber();
+
  
 
     
