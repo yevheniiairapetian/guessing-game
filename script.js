@@ -9,13 +9,13 @@ let audio2 = document.querySelector('#audio2');
 let audio3 = document.querySelector('#audio3');
 let user = prompt('What is your name?');
 let p = document.getElementById('p');
-p.innerText = "Welcome, " + user + " .Press 'guess the number' button to start the game. Press 'Play again' button to resume";
+p.innerText = "Welcome, " + user + " .Press 'guess the number' button to start the game. Press 'Pause the game' button to resume";
 
 
 
 function greeting(){
     if (user===null || user===undefined || user==="" || user===0){
-p.innerText = "Welcome, Anonymous! Best of luck!";
+p.innerText = "Welcome, Anonymous! Press 'guess the number' button to start the game. Press 'Pause the game' button to resume. Best of luck!";
 user = 'Anonymous';
 
 
