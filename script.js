@@ -15,7 +15,7 @@ p.innerText = "Welcome, " + user + " .Press 'guess the number' button to start t
 
 function greeting(){
     if (user===null || user===undefined || user==="" || user===0){
-p.innerText = "Please enter your name, Anonymous!";
+p.innerText = "Welcome, Anonymous! Best of luck!";
 user = 'Anonymous';
 
 
