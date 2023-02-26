@@ -9,18 +9,18 @@ let audio2 = document.querySelector('#audio2');
 let audio3 = document.querySelector('#audio3');
 let user = prompt('What is your name?');
 let p = document.getElementById('p');
-p.innerHTML = `Welcome `  + user +  ` Guess the number from 0 to 19. 
+p.innerText = "Welcome "  + user +  ` Guess the number from 0 to 19. 
 Press 'guess the number' button to start the game. 
-Press 'Pause the game' button to resume.
+Press 'Pause the game' button to pause.
 You will have 10 attempts. Best of luck!`;
 
 
 
 function greeting(){
     if (user===null || user===undefined || user==="" || user===0){
-p.innerText = `"Welcome, Anonymous! Guess the number from 0 to 19. 
+p.innerText = `Welcome, Anonymous! Guess the number from 0 to 19. 
 Press 'guess the number' button to start the game. 
-Press 'Pause the game' button to resume.  
+Press 'Pause the game' button to pause.  
 You will have 10 attempts. Best of luck!`;
 user = 'Anonymous';
 
@@ -46,7 +46,7 @@ function checkNumber(){
     //     })
     // }
     if(randomNumber===param){
-        h1.innerHtml = "Congratulations, " + user + " ! The right number is " + randomNumber + ". You won!";
+        p.innerText = "Congratulations, " + user + " ! The right number is " + randomNumber + ". You won!";
 
         // h2.innerText = randomNumber;
         audio.pause();
@@ -59,7 +59,7 @@ function checkNumber(){
     }
     else if(randomNumber>param){
     
-        h1.innerHtml = user + " ,the right number is bigger";
+        h1.innerText = user + " ,the right number is bigger";
         // h2.innerText = randomNumber;
       showGuesses();  
       gameOver();
@@ -73,7 +73,7 @@ function checkNumber(){
 else if(randomNumber<param){
 
 
-    h1.innerHtml = user + " ,the right number is smaller";
+    h1.innerText = user + " ,the right number is smaller";
 
     // h2.innerText = randomNumber;
     showGuesses();
