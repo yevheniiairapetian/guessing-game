@@ -9,13 +9,19 @@ let audio2 = document.querySelector('#audio2');
 let audio3 = document.querySelector('#audio3');
 let user = prompt('What is your name?');
 let p = document.getElementById('p');
-p.innerText = "Welcome, " + user + " .Press 'guess the number' button to start the game. Press 'Pause the game' button to resume";
+p.innerHTML = `Welcome `  + user +  ` Guess the number from 0 to 19. 
+Press 'guess the number' button to start the game. 
+Press 'Pause the game' button to resume.
+You will have 10 attempts. Best of luck!`;
 
 
 
 function greeting(){
     if (user===null || user===undefined || user==="" || user===0){
-p.innerText = "Welcome, Anonymous! Press 'guess the number' button to start the game. Press 'Pause the game' button to resume. Best of luck!";
+p.innerText = `"Welcome, Anonymous! Guess the number from 0 to 19. 
+Press 'guess the number' button to start the game. 
+Press 'Pause the game' button to resume.  
+You will have 10 attempts. Best of luck!`;
 user = 'Anonymous';
 
 
@@ -40,7 +46,7 @@ function checkNumber(){
     //     })
     // }
     if(randomNumber===param){
-        h1.innerText = "Congratulations, " + user + " ! The right number is " + randomNumber + ". You won!";
+        h1.innerHtml = "Congratulations, " + user + " ! The right number is " + randomNumber + ". You won!";
 
         // h2.innerText = randomNumber;
         audio.pause();
@@ -53,7 +59,7 @@ function checkNumber(){
     }
     else if(randomNumber>param){
     
-        h1.innerText = user + " ,the right number is bigger";
+        h1.innerHtml = user + " ,the right number is bigger";
         // h2.innerText = randomNumber;
       showGuesses();  
       gameOver();
@@ -67,7 +73,7 @@ function checkNumber(){
 else if(randomNumber<param){
 
 
-    h1.innerText = user + " ,the right number is smaller";
+    h1.innerHtml = user + " ,the right number is smaller";
 
     // h2.innerText = randomNumber;
     showGuesses();
@@ -95,9 +101,11 @@ function showGuesses(){
 
 function gameOver(){
     if (guesses === 0){
-        alert("Game Over, " + user + " ,you lost");
+        alert("Game Over, " + user + " ,you lost. Try again!");
 
-        guesses=5;
+        h1.innerText = "Game Over, " + user + ",you lost. Try again!";
+
+        guesses=10;
         audio.pause();
         audio2.play();
 
