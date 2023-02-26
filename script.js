@@ -88,9 +88,8 @@ function gameOver(){
 }
 
 function playAgain(){
-    location.reload();
-    h2.innerText = "Play the game!";
-    audio.play();
+    h1.innerText = "You stopped the game!";
+    audio.pause();
 
     
 }
