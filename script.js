@@ -88,7 +88,7 @@ function gameOver(){
 }
 
 function playAgain(){
-    h1.innerText = "You stopped the game!";
+    h1.innerText = "You paused the game! Press 'guess the number' button to resume";
     audio.pause();
 
     
