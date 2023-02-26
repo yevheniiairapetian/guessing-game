@@ -59,8 +59,9 @@ function checkNumber(){
     }
     else if(randomNumber>param){
     
-        h1.innerText = user + " ,the right number is bigger";
+        h1.innerText = user + " ,the right number is bigger. Continue trying!";
         // h2.innerText = randomNumber;
+        p.innerText = "";
       showGuesses();  
       gameOver();
       
@@ -73,8 +74,8 @@ function checkNumber(){
 else if(randomNumber<param){
 
 
-    h1.innerText = user + " ,the right number is smaller";
-
+    h1.innerText = user + " ,the right number is smaller. Continue trying!";
+    p.innerText = "";
     // h2.innerText = randomNumber;
     showGuesses();
     gameOver();
@@ -89,6 +90,7 @@ else if(randomNumber<param){
 
 else if (isNaN(param)){
     h1.innerText = user + " ,you cancelled or didn't enter a number";
+    p.innerText = "";
     // h2.innerText = randomNumber; 
          
 }
