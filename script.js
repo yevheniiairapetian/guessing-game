@@ -59,7 +59,7 @@ function checkNumber(){
     //     })
     // }
     if(randomNumber===param){
-        p.innerText = "Congratulations, " + user + " ! The right number is " + randomNumber + ". You won " + (wins=wins+1) + "time(s)! Try more!";
+        p.innerText = "Congratulations, " + user + " ! The right number is " + randomNumber + ". You won " + (wins=wins+1) + " time(s)! Try more!";
         h1.innerText = "";
         // h2.innerText = randomNumber;
         audio.pause();
