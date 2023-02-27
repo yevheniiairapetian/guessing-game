@@ -1,7 +1,17 @@
-body{
-    background-color:grey;
+html{
+    background: rgb(25,22,65);
+    background: linear-gradient(297deg, rgba(25,22,65,1) 0%, rgba(78,78,162,1) 17%, rgba(0,11,13,1) 100%);
     color:whitesmoke;
 }
+p, h1{
+    line-height:1.4em;
+    letter-spacing:1px;
+}
+
+div{
+    height:600px;
+}
+
 p{
     font-weight:bold;
     font-size:22px;
@@ -15,11 +25,11 @@ h2{
 }
 
 button{
-    font-weight:bold;
+    font-weight:bolder;
     font-size:18px;
     width:200px;
     height:50px;
-    background-color:whitesmoke;
+    background-color:whitemoke;
     color:grey;
 }
 
