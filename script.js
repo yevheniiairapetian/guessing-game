@@ -9,6 +9,8 @@ let audio2 = document.querySelector('#audio2');
 let audio3 = document.querySelector('#audio3');
 let user = prompt('What is your name?');
 let p = document.getElementById('p');
+let wins = 0;
+;
 p.innerText = "Welcome "  + user + ` Guess the number from 0 to 9.
 The number changes with every try. 
 Press 'guess the number' button to start the game. 
@@ -38,7 +40,12 @@ greeting();
 
 
 
-
+// function win(){
+//     let wins = 0;
+//     wins=wins+1;
+//     ;
+    
+// }
 
 function checkNumber(){
     audio.play();
@@ -52,7 +59,7 @@ function checkNumber(){
     //     })
     // }
     if(randomNumber===param){
-        p.innerText = "Congratulations, " + user + " ! The right number is " + randomNumber + ". You won! Try more!";
+        p.innerText = "Congratulations, " + user + " ! The right number is " + randomNumber + ". You won " + (wins=wins+1) + "time(s)! Try more!";
         h1.innerText = "";
         // h2.innerText = randomNumber;
         audio.pause();
@@ -110,7 +117,7 @@ function showGuesses(){
 function gameOver(){
     if (guesses === 0){
 
-        h1.innerText = "Game Over, " + user + ",you lost this time. Try again!";
+        h1.innerText = "Game Over, " + user + ",you lost this time. Number of wins = " + wins + ". Try again!";
 
         guesses=10;
         audio.pause();
