@@ -52,7 +52,7 @@ function checkNumber(){
     
     let randomNumber = Math.floor(Math.random() * 10);
     
-    let param = parseInt(prompt(user + " ,enter a number to guess it between 0 and 19 "));
+    let param = parseInt(prompt(user + " ,enter a number to guess it between 0 and 9 "));
     // if (playAgain){
     //     playAgain.addEventListener('click', function(){
     //         location.reload();
