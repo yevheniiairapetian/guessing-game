@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body onload="playMusic()">
+<body>
     <div>
     <h1 id="h1" style="text-align: center"></h1>
     <h2 id="credit" style="text-align: center"></h2>
+    <img style="display:none" src="src/tenor.gif" id="img">
+    <img style="display:none" src="src/R.gif" id="img2">
     <p id="p" style="text-align: center"></p>
     <button style="margin: 0 auto; display:block" onclick="checkNumber()" onclick="audio.play()">Guess the number!</button>
     <button id="playAgain" style="margin: 0 auto; display:block" onclick="playAgain()" onclick="audio.play()" >Pause the game!</button>

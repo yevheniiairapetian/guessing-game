@@ -10,6 +10,9 @@ let audio3 = document.querySelector('#audio3');
 let user = prompt('What is your name?');
 let p = document.getElementById('p');
 let wins = 0;
+let img = document.getElementById('img');
+let img2 = document.getElementById('img2');
+
 ;
 p.innerText = "Welcome "  + user + ` Guess the number from 0 to 9.
 The number changes with every try. 
@@ -52,22 +55,22 @@ function checkNumber(){
     
     let randomNumber = Math.floor(Math.random() * 10);
     
-    let param = parseInt(prompt(user + " ,enter a number to guess it between 0 and 19 "));
+    let param = parseInt(prompt(user + " ,enter a number to guess it between 0 and 9 "));
     // if (playAgain){
     //     playAgain.addEventListener('click', function(){
     //         location.reload();
     //     })
     // }
     if(randomNumber===param){
+        img.style.visibility = "visible";
+        img.style.display = "block";
+        img2.style.display = "none";
+        audio.pause();
+        audio3.play();
         p.innerText = "Congratulations, " + user + " ! The right number is " + randomNumber + ". You won " + (wins=wins+1) + " time(s)! Try more!";
         h1.innerText = "";
-        // h2.innerText = randomNumber;
-        audio.pause();
-        success();
-
+        h2.innerText = "";
         
-
-
 
     }
     else if(randomNumber>param){
@@ -78,11 +81,6 @@ function checkNumber(){
       showGuesses();  
       gameOver();
       
-
-    
-        
-
-
 }
 else if(randomNumber<param){
 
@@ -92,12 +90,6 @@ else if(randomNumber<param){
     // h2.innerText = randomNumber;
     showGuesses();
     gameOver();
-    
-    
-    
-    
-
-        
 
 }
 
@@ -116,14 +108,16 @@ function showGuesses(){
 
 function gameOver(){
     if (guesses === 0){
-
+        img2.style.visibility = "visible";
+        img2.style.display = "block";
+        img.style.display = "none";
+        
+        
         h1.innerText = "Game Over, " + user + ",you lost this time. Number of wins = " + wins + ". Try again!";
 
         guesses=10;
         audio.pause();
         audio2.play();
-
-
 
     }
 }
@@ -131,9 +125,7 @@ function gameOver(){
 function playAgain(){
     h1.innerText = user + " ,you paused the game! Press 'guess the number' button to resume";
     audio.pause();
-    
-
-    
+  
 }
 
 function success(){

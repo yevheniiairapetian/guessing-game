@@ -8,6 +8,18 @@ p, h1{
     letter-spacing:1px;
 }
 
+#img{
+    margin:0 auto;
+    width:250px;
+    height:300px;
+}
+
+#img2{
+    margin:0 auto;
+    width:380px;
+    height:280px;
+}
+
 div{
     height:600px;
 }
