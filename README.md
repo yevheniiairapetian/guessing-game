@@ -9,3 +9,7 @@
 ### You have 10 attempts.
 ### Enter the numbers in the pop-up windows.
 ### Good luck!
+## Technologies used:
+### Html
+### CSS
+### Vanilla JS
