@@ -16,10 +16,10 @@ let img2 = document.getElementById('img2');
 let img3 = document.getElementById('img3');
 let randomNumber = Math.floor(Math.random() * 10);
 ;
-p.innerText = "Welcome "  + user + `! Guess the number from 0 to 9.
-The number changes with every try. 
+p.innerText = "Welcome "  + user + `! Guess the number from 0 to 9. 
 Press 'guess the number' button to start the game. 
 Press 'Pause the game' button to pause.
+Press 'Resume' to resume the game.
 Refresh the page if you want to start from scratch with a new user.
 You can win many times! 
 You will have 10 attempts. Best of luck!`;
@@ -29,9 +29,9 @@ You will have 10 attempts. Best of luck!`;
 function greeting(){
     if (user===null || user===undefined || user==="" || user===0){
 p.innerText = `Welcome, Anonymous! Guess the number from 0 to 9. 
-The number changes with every try.
 Press 'guess the number' button to start the game. 
 Press 'Pause the game' button to pause.
+Press 'Resume' to resume the game.
 Refresh the page if you want to start from scratch with a new user.
 You can win many times!   
 You will have 10 attempts. Best of luck!`;
