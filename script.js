@@ -4,7 +4,6 @@ let h2 = document.querySelector('#h2');
 let credit = document.querySelector('#credit');
 let guesses=10;
 let pause=document.querySelector('#pause');
-let resume = document.querySelector('#resume');
 let audio = document.querySelector('#audio');
 let audio2 = document.querySelector('#audio2');
 let audio3 = document.querySelector('#audio3');
@@ -17,9 +16,8 @@ let img3 = document.getElementById('img3');
 let randomNumber = Math.floor(Math.random() * 10);
 ;
 p.innerText = "Welcome "  + user + `! Guess the number from 0 to 9. 
-Press 'guess the number' button to start the game. 
+Press 'Play' button to start the game. 
 Press 'Pause the game' button to pause.
-Press 'Resume' to resume the game.
 Refresh the page if you want to start from scratch with a new user.
 You can win many times! 
 You will have 10 attempts. Best of luck!`;
@@ -30,8 +28,7 @@ function greeting(){
     if (user===null || user===undefined || user==="" || user===0){
 p.innerText = `Welcome, Anonymous! Guess the number from 0 to 9. 
 Press 'guess the number' button to start the game. 
-Press 'Pause the game' button to pause.
-Press 'Resume' to resume the game.
+Press 'Play' button to pause.
 Refresh the page if you want to start from scratch with a new user.
 You can win many times!   
 You will have 10 attempts. Best of luck!`;
@@ -169,11 +166,7 @@ pause.addEventListener("click", function(){
     h1.innerHTML = user + " ,you paused the game! Press again to resume";
 });
 
-// resume.addEventListener("click", function(){
-//     resume();
-// });
 
- 
 
     
 
