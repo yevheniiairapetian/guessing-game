@@ -83,22 +83,12 @@ function checkNumber(){
         img.style.visibility = "visible";
         img.style.display = "block";
         img2.style.display = "none";
-        img3.style.display = "none";
         audio.pause();
         audio3.play();
         p.innerText = "Congratulations, " + user + " ! The right number is " + randomNumber + ". You won " + (wins=wins+1) + " time(s)! Try more!";
         h1.innerText = "";
         // h2.innerText = "";
         randomNumber = Math.floor(Math.random() * 10);
-        // (function(){
-        //     if(img.style.display==="block")
-        //     setTimeout(2000, (img.style.display=="none"));
-        // })()
-        
-        // if(wins===2){
-        //     let imgSrc = img.getAttribute;
-        //     imgSrc.setAttribute = "giphy.gif";
-        // }
 
     }
     else if(randomNumber>param){
