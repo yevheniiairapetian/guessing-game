@@ -153,7 +153,7 @@ function success(){
 pause.addEventListener("click", function(){
     audio.pause();
     audio3.pause();
-    h1.innerHTML = user + " ,you paused the game! Press again to resume";
+    h1.innerHTML = user + " ,you paused the game! Press 'Play!' to resume";
 });
 
 
