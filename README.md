@@ -10,9 +10,10 @@
 #### Enter the numbers in the pop-up windows.
 #### Good luck!
 ### Technologies used:
-### Html
-### CSS
-### Vanilla JS
+#### Html
+#### CSS
+#### Vanilla JS
+### How to access:
 #### To clone the game use the `git clone git@github.com:yevheniiairapetian/guessing-game.git` command
 #### or click on the `<> Code` button > `Download ZIP`
 #### then open the `index.html` file in the browser of your choice
